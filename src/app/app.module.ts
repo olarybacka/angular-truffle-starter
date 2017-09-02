@@ -1,3 +1,4 @@
+import { GetWeb3Service } from './utils/get-web3.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -14,7 +15,7 @@ import { AppComponent } from './app.component';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [GetWeb3Service],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
